@@ -21,6 +21,6 @@ C#webアプリ作成練習
 >・備考
 
 
-- 開発環境 Visual Studio for Macデータ
-- 入力のvalidationは未実装
+- 開発環境 Visual Studio for Mac
+- データ入力のvalidationは未実装
 - Azureへのデプロイがうまくいかない
