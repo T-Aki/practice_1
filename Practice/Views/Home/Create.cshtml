@@ -1,0 +1,69 @@
+﻿@model Practice.Models.Person
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>新規作成</h2>
+
+@using (Html.BeginForm()) {
+
+    <fieldset>
+        <legend>登録フォーム</legend>
+       
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Id)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.Id) 半角数字
+            @Html.ValidationMessageFor(model => model.Id) 
+        </div>
+       
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Name)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
+       
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Age)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.Age) 半角数字
+            @Html.ValidationMessageFor(model => model.Age)
+        </div>
+
+	    <div class="editor-label">
+            @Html.LabelFor(model => model.BirthDay)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.BirthDay) yyyy/mm/dd
+            @Html.ValidationMessageFor(model => model.BirthDay)
+        </div>
+       
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Gender)
+        </div>
+        <div class="editor-field">
+            @Html.RadioButtonFor( model => model.Gender, "Male" ) Male
+		    @Html.RadioButtonFor( model => model.Gender, "Female" ) Female
+		    @Html.RadioButtonFor( model => model.Gender, "Others" ) Others
+            @Html.ValidationMessageFor(model => model.Gender)
+        </div>
+       
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Remarks)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.Remarks)
+            @Html.ValidationMessageFor(model => model.Remarks)
+        </div>
+       
+        <p>
+            <input type="submit" value="登録" />
+        </p>
+    </fieldset>
+    }

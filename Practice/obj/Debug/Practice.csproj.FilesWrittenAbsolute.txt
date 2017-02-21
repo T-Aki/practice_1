@@ -1,0 +1,12 @@
+/Users/home/Projects/Practice/Practice/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/home/Projects/Practice/Practice/bin/Practice.dll.mdb
+/Users/home/Projects/Practice/Practice/bin/Practice.dll
+/Users/home/Projects/Practice/Practice/obj/Debug/Practice.dll
+/Users/home/Projects/Practice/Practice/obj/Debug/Practice.dll.mdb
+/Users/home/Projects/Practice/Practice/bin/System.Web.Razor.dll
+/Users/home/Projects/Practice/Practice/bin/Microsoft.Web.Infrastructure.dll
+/Users/home/Projects/Practice/Practice/bin/System.Web.Helpers.dll
+/Users/home/Projects/Practice/Practice/bin/System.Web.WebPages.Deployment.dll
+/Users/home/Projects/Practice/Practice/bin/System.Web.WebPages.dll
+/Users/home/Projects/Practice/Practice/bin/System.Web.WebPages.Razor.dll
+/Users/home/Projects/Practice/Practice/bin/System.Web.Mvc.dll

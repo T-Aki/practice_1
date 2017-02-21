@@ -1,0 +1,66 @@
+﻿@model Practice.Models.Person
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>編集</h2>
+<h3>ID = @Model.Id</h3>
+
+@using (Html.BeginForm()) {
+
+    <fieldset>
+        <legend>編集フォーム</legend>
+	
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Name)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
+       
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Age)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.Age) 半角数字
+            @Html.ValidationMessageFor(model => model.Age)
+        </div>
+
+	    <div class="editor-label">
+            @Html.LabelFor(model => model.BirthDay)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => Model.BirthDay) yyyy/mm/dd
+            @Html.ValidationMessageFor(model => model.BirthDay)
+        </div>
+       
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Gender)
+        </div>
+        <div class="editor-field">
+		    @Html.RadioButtonFor( model => model.Gender, "Male" ) Male
+		    @Html.RadioButtonFor( model => model.Gender, "Female" ) Female
+		    @Html.RadioButtonFor( model => model.Gender, "Others" ) Others 
+            @Html.ValidationMessageFor(model => model.Gender)
+        </div>
+       
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Remarks)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.Remarks)
+            @Html.ValidationMessageFor(model => model.Remarks)
+        </div>
+       
+        <p>
+            <input type="submit" value="保存" />
+        </p>
+    </fieldset>
+    }
+
+
+@Html.ActionLink("一覧へ戻る", "Index")
+

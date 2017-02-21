@@ -1,0 +1,31 @@
+﻿@model Practice.ViewModels.PeopleViewModel
+
+<h2>Welcome to sample App!</h2>
+
+
+<table>
+	<tr align="center">
+		<th>@Html.LabelFor(model => model.People[0].Id)</th>
+		<th>@Html.LabelFor(model => model.People[0].Name)</th>
+		<th>@Html.LabelFor(model => model.People[0].Age)</th>
+		<th>@Html.LabelFor(model => model.People[0].BirthDay)</th>
+		<th>@Html.LabelFor(model => model.People[0].Gender)</th>
+		<th>@Html.LabelFor(model => model.People[0].Remarks)</th>
+	</tr>
+
+	@foreach (var person in Model.People)
+	{
+	<tr align="center">
+		<td>@person.Id</td>
+		<td>@person.Name</td>
+		<td>@person.Age</td>
+		<td>@person.BirthDay.ToShortDateString()</td>
+		<td>@person.Gender</td>
+		<td>@person.Remarks</td>
+		<td>@Html.ActionLink("編集", "Edit", new { id = @person.Id })</td>
+	</tr>
+	}
+
+</table>
+@Html.ActionLink("新規作成", "Create")
+
