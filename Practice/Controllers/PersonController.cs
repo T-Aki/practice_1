@@ -25,19 +25,12 @@ namespace Practice.Controllers
 		[HttpPost]
 		public ActionResult Edit(int id, Person member)
 		{
-			try
-			{
 				members.People[id - 1].Age = member.Age;
 				members.People[id - 1].BirthDay = member.BirthDay;
 				members.People[id - 1].Gender = member.Gender;
 				members.People[id - 1].Name = member.Name;
 				members.People[id - 1].Remarks = member.Remarks;
 				return RedirectToAction("Index");
-			}
-			catch
-			{
-				return View();
-			}
 		}
 		public ActionResult Create()
 		{
@@ -47,16 +40,9 @@ namespace Practice.Controllers
 		[HttpPost]
 		public ActionResult Create(Person member)
 		{
-			try
-			{
 				member.Id = id_counter + 1;
 				members.People.Add(member);
 				return RedirectToAction("Index");
-			}
-			catch
-			{
-				return View();
-			}
 		}
 	}
 }
