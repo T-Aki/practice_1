@@ -16,8 +16,7 @@
             @Html.LabelFor(model => model.Id)
         </div>
         <div class="editor-field">
-            @Html.TextBoxFor(model => model.Id) 半角数字
-            @Html.ValidationMessageFor(model => model.Id) 
+		@ViewData["id"]
         </div>
        
         <div class="editor-label">

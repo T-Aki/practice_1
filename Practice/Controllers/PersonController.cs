@@ -12,6 +12,7 @@ namespace Practice.Controllers
 	public class PersonController : Controller
 	{ 
 		public static PeopleViewModel members = new PeopleViewModel();
+		public static int id_counter = members.People.Count;
 		public ActionResult Index()
 		{
 			return View(members);
@@ -40,6 +41,7 @@ namespace Practice.Controllers
 		}
 		public ActionResult Create()
 		{
+			ViewData["id"] = id_counter + 1;
 			return View();
 		}
 		[HttpPost]
@@ -47,6 +49,7 @@ namespace Practice.Controllers
 		{
 			try
 			{
+				member.Id = id_counter + 1;
 				members.People.Add(member);
 				return RedirectToAction("Index");
 			}
