@@ -9,7 +9,7 @@ using Practice.ViewModels;
 
 namespace Practice.Controllers
 {
-	public class HomeController : Controller
+	public class PersonController : Controller
 	{ 
 		public static PeopleViewModel members = new PeopleViewModel();
 		public ActionResult Index()
