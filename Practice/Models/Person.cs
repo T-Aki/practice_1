@@ -14,7 +14,7 @@ namespace Practice.Models
 		public int Id { get; set; }
 
 		[Display(Name = "名前")]
-		[Required]
+		[Required(ErrorMessage = "名前を入力してください")]
 		public string Name { get; set; }
 
 		[Display(Name = "年齢")]

@@ -34,15 +34,16 @@ namespace Practice.Controllers
 		}
 		public ActionResult Create()
 		{
-			ViewData["id"] = id_counter + 1;
+			ViewData["id"] = id_counter+1;
 			return View();
 		}
 		[HttpPost]
 		public ActionResult Create(Person member)
 		{
-				member.Id = id_counter + 1;
-				members.People.Add(member);
-				return RedirectToAction("Index");
+			id_counter = id_counter + 1;
+			member.Id = id_counter;
+			members.People.Add(member);
+			return RedirectToAction("Index");
 		}
 	}
 }
