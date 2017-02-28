@@ -1,13 +1,14 @@
 ﻿<Properties StartupConfiguration="{BC9AACAF-B93C-422F-903A-EEE79A700F90}|">
   <MonoDevelop.Ide.ItemProperties.Practice PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Practice/Controllers/PersonController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Practice/Views/Person/Edit.cshtml">
     <Files>
-      <File FileName="Practice/Controllers/PersonController.cs" Line="37" Column="4" />
+      <File FileName="Practice/Controllers/PersonController.cs" Line="1" Column="1" />
       <File FileName="Practice/Views/Person/Index.cshtml" Line="1" Column="1" />
-      <File FileName="Practice/Views/Person/Edit.cshtml" Line="21" Column="45" />
+      <File FileName="Practice/Views/Person/Edit.cshtml" Line="29" Column="18" />
       <File FileName="Practice/ViewModels/PeopleViewModel.cs" Line="18" Column="69" />
       <File FileName="Practice/App_Start/RouteConfig.cs" Line="1" Column="1" />
-      <File FileName="Practice/Models/Person.cs" Line="16" Column="25" />
+      <File FileName="Practice/Models/Person.cs" Line="27" Column="25" />
+      <File FileName="Practice/Views/Person/Create.cshtml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

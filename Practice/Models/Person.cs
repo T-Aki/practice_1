@@ -10,7 +10,6 @@ namespace Practice.Models
 	public class Person
 	{
 		[Display(Name = "ID")]
-		[Key]
 		public int Id { get; set; }
 
 		[Display(Name = "名前")]
@@ -18,16 +17,14 @@ namespace Practice.Models
 		public string Name { get; set; }
 
 		[Display(Name = "年齢")]
-		[Required]
-		[Range(0,120)]
+		[Range(0,120,ErrorMessage = "0~120の範囲を入力してください")]
 		public byte Age { get; set; }
 
 		[Display(Name = "生年月日")]
-		[Required]
+		[Required(ErrorMessage = "生年月日を入力してください")]
 		public DateTime BirthDay { get; set; }
 
 		[Display(Name = "性別")]
-		[Required]
 		[EnumDataType(typeof(GenderEnum))]
 		public GenderEnum Gender { get; set; }
 

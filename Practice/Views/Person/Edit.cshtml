@@ -18,7 +18,7 @@
         </div>
         <div class="editor-field">
             @Html.TextBoxFor(model => model.Name)
-            @Html.ValidationMessage("Name","",new { @class = "text-danger" })
+            @Html.ValidationMessageFor(model => model.Name)
         </div>
        
         <div class="editor-label">
